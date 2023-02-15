@@ -5,18 +5,18 @@
  * равен среднему арифметическому первых i элементов массива А.
  */
 
-function avg ($arr_a)
+function avg ($arrA)
 {
-    $arr_b = [];
+    $arrB = [];
     $avg = 0;
-    for ($i = 0; $i < count($arr_a); $i++) {
+    for ($i = 0; $i < count($arrA); $i++) {
         for ($j = 0; $j < $i + 1; $j++) {
-            $avg += $arr_b[$j];
+            $avg += $arrB[$j];
         }
     
-        $arr_b[] = round($avg / ($i + 1), 2);
+        $arrB[] = round($avg / ($i + 1), 2);
         $avg = 0;
     }
 
-    return $arr_b;
+    return $arrB;
 }
