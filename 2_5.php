@@ -4,7 +4,8 @@
  * Переставить элементы массива так, чтобы сначала расположились все нули, 
  * затем все двойки и, наконец, все единицы.
  */
-function quickSort(&$arr, $low, $high) {
+function quickSort(&$arr, $low, $high) 
+{
     $i = $low;                
     $j = $high;
     $middle = $arr[ ( $low + $high ) / 2 ];
