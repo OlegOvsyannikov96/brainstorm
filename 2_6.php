@@ -3,7 +3,8 @@
  * Получить упорядоченный по возрастанию массив С(К) путем слияния двух порядоченных 
  * по возрастанию массивов А(N) и В(М), где К=М+N.
  */
-function quickSort(&$arr, $low, $high) {
+function quickSort(&$arr, $low, $high) 
+{
     $i = $low;                
     $j = $high;
     $middle = $arr[ ( $low + $high ) / 2 ];
@@ -44,5 +45,6 @@ for ($i = 0; $i < count($lArr); $i++) {
 for ($j = count($lArr); $j < count($bArr); $j++) {
     $res[] = $bArr[$j];
 }
+
 quickSort($res, 0, count($res) - 1);
 print_r($res);
